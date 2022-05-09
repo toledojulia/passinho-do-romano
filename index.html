@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passinho do Romano</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+
+        <form action="" class="container">
+            <h1 class="titulo"> DECODIFICADOR</h1>
+            <p>  Deixe a sua mensagem segura aqui ✨</p>
+            <section class="escolha">
+                <select name="selecione" id="selecione">
+                    <option value="metodo" disabled selected>Escolha uma opção</option>
+                    <option value="caesar">Cifra de César</option>
+                    <option value="base64">Base64</option>
+                </select>
+    
+                <input class="ocultarIncremento" id="ocultarIncremento" type="number" placeholder="Escolha os passos!">
+                <div class="metodo">
+                    <input checked type="radio" id="codificar" name="escolhaDeMetodo" value="codificar">
+                    <label for="escolhaDeMetodo">Codificar</label>
+                </div>
+                <div class="metodo">
+                    <input type="radio" id="decodificar" name="escolhaDeMetodo">
+                    <label for="escolhaDeMetodo">Decodificar</label>
+                </div>
+            </section>
+    
+            <section class="mensagem-usuario">
+                <textarea class="texto" id="escrever" name="texto-usuario" placeholder="Escreva sua mensagem!" rows="10"cols="33"></textarea>
+                <textarea class="texto" id="resultado" name="texto-usuario" placeholder= "Sua mensagem em segurança..." rows="10" cols="33" readonly></textarea>
+            </section>
+            <button type="button" id="button">Deixar segura ⭐</button>
+            
+
+        </form>
+    </div>
+    
+
+    <script src="./index.js"></script>
+
+</body>
+</html>
